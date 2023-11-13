@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+}
+h1 {color:#fff;}
+ul {
+    list-style: none;
+    padding:0;
+    color:#fff;
+}
+.entete{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+.logo {
+    width:20%;
+    text-align: center;
+    padding-top: 20px;
+}
+.logo img {
+    width:70px;
+}
+.listes {
+    width:80%;
+}
+.navMenu {
+    display:flex;
+    justify-content: flex-end;
+}
+.redTitle , .blueTitle {
+    font-size:2em;
+    margin-bottom:20px;
+    padding-bottom: 10px;
+}
+.redTitle {
+    border-bottom: 5px solid red;
+}
+.blueTitle {
+    border-bottom: 5px solid blue;
+}
+.navMenu>li {
+    margin-right:20px;
+}
+nav {
+    background-image: url('images/fancy-pants.jpg');
+}
+@media screen and (min-width:768px) and (max-width:900px) {
+
+    .entete{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    }
+    .navMenu {
+        display:flex;
+     justify-content: space-evenly;
+
+    }
+    .logo {
+        width:100%;
+        text-align: center;
+        padding-top: 20px;
+    }
+    .listes {
+        width:100%;
+      
+    }
+}
